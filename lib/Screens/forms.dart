@@ -309,13 +309,13 @@ class _FormsState extends State<Forms> {
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    Color.fromARGB(255, 11, 96, 157)),
+                                    const Color.fromARGB(255, 11, 96, 157)),
                             onPressed: () {
                               if (_formKey.currentState!.validate()) {
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
-                                    return AlertDialog(
+                                    return const AlertDialog(
                                       icon: Icon(
                                         Icons.check_circle,
                                         size: 30,
